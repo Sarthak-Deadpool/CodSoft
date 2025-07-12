@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: maroon;
+}
+
+#left {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    background-image: url(img/182213-1080x2280-samsung-hd-deadpool-background.jpg);
+    background-size: cover;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    background-color: maroon;
+}
+
+#up {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    background-color: maroon;
+}
+
+#bottom {
+    width: 100%;
+    height: 50%;
+    background-image: url(img/182103-2560x1440-desktop-hd-deadpool-wallpaper-photo.jpg);
+    background-size: cover;
+    transition: 0.5s ease;
+}
+#bottom:hover{
+    scale: 0.9;
+}
+
+#upleft {
+    height: 100%;
+    width: 40%;
+    background-image: url(img/download\ \(1\).jpg);
+    background-size: 80% 90%;
+    transition: 0.5s ease ;
+}
+#upleft:hover{
+    scale: 1.1;
+}
+#upright{
+    height: 100%;
+    width: 60%;
+    background-image: url(/img/deadpool\ GIF\ by\ Deadpool\'s\ Fun\ Sack.gif);
+    background-size: 100% 100%;
+    /* transition: 0.3s ease ; */
+}
+/* #upright:hover{
+    scale: 1.1;
+} */
+#lnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between  ;
+    width: 100%;
+    background-color: rgb(139,35,35);
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+#lnavleft{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-size: cover;
+    background-image: url(img/pngegg\ \(2\).png);
+}
+#lnavright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#lnavright a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    margin-right: 20px;
+    font-weight: 500;
+}
+#text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: maroon;
+}
+
+#text h1{
+    font-size: 50px;
+}
+#text p{
+    font-size: 20px;
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+    #left{
+        width:100%;
+    }
+    #right{
+        width: 100%;
+    }
+    #text{
+        top:55%;
+    }
+}
